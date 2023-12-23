@@ -45,7 +45,7 @@ jobs:
           mkdir test
           cd test
           hexo init
-          mv * ./
+          mv * ../
           rm -rf test
           npm install gulp-cli -g #全局安装gulp
           npm install --save
