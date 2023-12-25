@@ -44,10 +44,10 @@ jobs:
         run: |
           npm install gulp-cli -g
           npm install --save
-          ls
 
       - name: 生成静态文件
         run: |
+          ls
           hexo clean
           hexo generate
 
