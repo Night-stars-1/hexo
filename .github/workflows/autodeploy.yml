@@ -42,12 +42,6 @@ jobs:
       - name: 安装依赖
         if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
         run: |
-          mkdir test
-          cd test
-          hexo init
-          mv * ../
-          cd ..
-          rm -rf test
           npm install gulp-cli -g #全局安装gulp
           npm install --save
 
