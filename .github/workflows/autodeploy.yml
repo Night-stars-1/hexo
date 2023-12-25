@@ -47,7 +47,7 @@ jobs:
 
       - name: 生成静态文件
         run: |
-          ls
+          git clone -b main https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git themes/anzhiyu
           hexo clean
           hexo generate
 
